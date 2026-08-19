@@ -3,6 +3,14 @@
     <channel>
         <title>Reviewsson</title>
         <item>
+            <title>1.0.4</title>
+            <pubDate>Wed, 19 Aug 2026 12:42:27 +0200</pubDate>
+            <sparkle:version>5</sparkle:version>
+            <sparkle:shortVersionString>1.0.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://cfinbetsson.github.io/Reviewsson-Config/releases/Reviewsson-1.0.4.dmg" length="2286443" type="application/octet-stream" sparkle:edSignature="P0EyfPNEqBE3XrdstBmNQ4VujgwdLSUrAVYPvm72aUopYB+JFBcc3/rec32TDRh7MsZr9a9akxsj2ExUjGVABg=="/>
+        </item>
+        <item>
             <title>1.0.3</title>
             <pubDate>Wed, 19 Aug 2026 12:36:04 +0200</pubDate>
             <sparkle:version>4</sparkle:version>
@@ -17,14 +25,6 @@
             <sparkle:shortVersionString>1.0.2</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <enclosure url="https://cfinbetsson.github.io/Reviewsson-Config/releases/Reviewsson-1.0.2.dmg" length="2288127" type="application/octet-stream" sparkle:edSignature="x5c6EVpKQU88IC7Wrlcf1+32++8U/1+nWL2BVQ17r6u9Yw3YF5X2oiUA5589y/ci15+RKDYBZUxgUt9MKGEtCA=="/>
-        </item>
-        <item>
-            <title>1.0.1</title>
-            <pubDate>Wed, 19 Aug 2026 12:07:31 +0200</pubDate>
-            <sparkle:version>2</sparkle:version>
-            <sparkle:shortVersionString>1.0.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://cfinbetsson.github.io/Reviewsson-Config/releases/Reviewsson-1.0.1.dmg" length="2288138" type="application/octet-stream" sparkle:edSignature="5qBq0HAuZ2b+cDZ/zjRqmsY4PKFUnqBZV3oy5isWmWJHj9bp6ecnBwUzhnU9+V4VmbWWb2J5TlObvrN6HgjuCw=="/>
         </item>
     </channel>
 </rss>
