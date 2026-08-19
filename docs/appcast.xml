@@ -8,7 +8,7 @@
             <sparkle:version>1</sparkle:version>
             <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://cfinbetsson.github.io/Reviewsson-Config/releases/Reviewsson-1.0.dmg" length="1207246" type="application/octet-stream" sparkle:edSignature="dXskmH3JJ/jbvKBlnf0iZv8gWQGWXJW8amjgKkI3xgq1SBf21nnJpufZx8S2X6KK/WqhB0XA3h6uX7NkMW+hCQ=="/>
+            <enclosure url="https://cfinbetsson.github.io/Reviewsson-Config/releases/Reviewsson-1.0.dmg" length="1208969" type="application/octet-stream" sparkle:edSignature="Z1MatGct8AjFsnLycYOyNchdU30A6WmvfYxugD5IYgVUBqwDeuEp/rxi97++viZuESzOzoZuz8L/lFTVXrmCDQ=="/>
         </item>
     </channel>
 </rss>
