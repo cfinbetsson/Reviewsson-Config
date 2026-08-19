@@ -33,9 +33,9 @@ if ! xcrun stapler validate "$APP_PATH" >/dev/null 2>&1; then
   esac
 fi
 
-DEST="$ROOT/docs/releases/Reviewsson-$VERSION.zip"
-echo "Zipping -> $DEST"
-ditto -c -k --sequesterRsrc --keepParent "$APP_PATH" "$DEST"
+DEST="$ROOT/docs/releases/Reviewsson-$VERSION.dmg"
+echo "Building DMG -> $DEST"
+"$ROOT/scripts/make-dmg.sh" "$VERSION" "$APP_PATH" "$DEST"
 
 echo "Regenerating appcast..."
 "$ROOT/scripts/publish.sh"
