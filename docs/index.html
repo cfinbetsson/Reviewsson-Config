@@ -3,15 +3,69 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Reviewsson Updates</title>
+    <title>Download Reviewsson</title>
     <style>
-      body { font-family: -apple-system, system-ui, sans-serif; max-width: 40rem; margin: 4rem auto; padding: 0 1rem; line-height: 1.5; }
-      code { background: #f2f2f2; padding: 0.1rem 0.3rem; border-radius: 4px; }
+      :root { color-scheme: light dark; }
+      body { font-family: -apple-system, system-ui, sans-serif; max-width: 34rem; margin: 4rem auto; padding: 0 1rem; line-height: 1.5; text-align: center; }
+      h1 { margin-bottom: 0.25rem; }
+      .sub { color: #888; margin-top: 0; }
+      .download { display: inline-block; margin: 1.5rem 0 0.5rem; padding: 0.8rem 1.6rem; font-size: 1.05rem; font-weight: 600; color: #fff; background: #0a84ff; border-radius: 10px; text-decoration: none; }
+      .download:hover { background: #0060df; }
+      .meta { color: #888; font-size: 0.9rem; }
+      .feed { margin-top: 2.5rem; font-size: 0.85rem; color: #999; }
+      .feed a { color: inherit; }
     </style>
   </head>
   <body>
     <h1>Reviewsson</h1>
-    <p>This site hosts the Sparkle auto-update feed for the Reviewsson macOS app.</p>
-    <p>Update feed: <a href="appcast.xml">appcast.xml</a></p>
+    <p class="sub">for macOS</p>
+
+    <div id="download-area">
+      <p>Loading the latest version…</p>
+    </div>
+
+    <p class="feed">Auto-updates are delivered via <a href="appcast.xml">appcast.xml</a>.</p>
+
+    <script>
+      // Reads the Sparkle appcast and links to the newest release's enclosure.
+      const S = "http://www.andymatuschak.org/xml-namespaces/sparkle";
+
+      function text(item, localName) {
+        const el = item.getElementsByTagNameNS(S, localName)[0];
+        return el ? el.textContent.trim() : "";
+      }
+
+      fetch("appcast.xml", { cache: "no-store" })
+        .then((r) => { if (!r.ok) throw new Error(r.status); return r.text(); })
+        .then((xml) => {
+          const doc = new DOMParser().parseFromString(xml, "application/xml");
+          const items = [...doc.getElementsByTagName("item")];
+          if (!items.length) throw new Error("no releases");
+
+          // Newest = highest sparkle:version (integer CFBundleVersion).
+          items.sort((a, b) => Number(text(b, "version")) - Number(text(a, "version")));
+          const latest = items[0];
+
+          const enclosure = latest.getElementsByTagName("enclosure")[0];
+          const url = enclosure ? enclosure.getAttribute("url") : null;
+          if (!url) throw new Error("no download");
+
+          const shortVersion = text(latest, "shortVersionString") || text(latest, "version");
+          const minOS = text(latest, "minimumSystemVersion");
+          const pub = latest.getElementsByTagName("pubDate")[0];
+
+          const parts = [];
+          if (pub) parts.push(new Date(pub.textContent).toLocaleDateString());
+          if (minOS) parts.push("Requires macOS " + minOS + "+");
+
+          document.getElementById("download-area").innerHTML =
+            '<a class="download" href="' + url + '">Download ' + shortVersion + "</a>" +
+            (parts.length ? '<p class="meta">' + parts.join(" · ") + "</p>" : "");
+        })
+        .catch(() => {
+          document.getElementById("download-area").innerHTML =
+            '<p>Couldn\u2019t load the latest release. See <a href="appcast.xml">appcast.xml</a>.</p>';
+        });
+    </script>
   </body>
 </html>
