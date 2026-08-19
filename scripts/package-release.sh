@@ -22,19 +22,10 @@ if [ ! -d "$APP_PATH" ]; then
   exit 1
 fi
 
-# Stapling isn't strictly required for Sparkle to update online, but it is for
-# offline Gatekeeper — warn rather than silently ship an un-notarized build.
-if ! xcrun stapler validate "$APP_PATH" >/dev/null 2>&1; then
-  printf 'warning: %s is not stapled/notarized. Continue anyway? [y/N] ' "$APP_PATH"
-  read -r reply
-  case "$reply" in
-    y|Y) ;;
-    *) echo "aborted."; exit 1 ;;
-  esac
-fi
-
 DEST="$ROOT/docs/releases/Reviewsson-$VERSION.dmg"
 echo "Building DMG -> $DEST"
+# make-dmg.sh notarizes & staples the DMG (unless SKIP_NOTARIZE=1), which covers
+# the app inside, so the app itself does not need to be pre-stapled.
 "$ROOT/scripts/make-dmg.sh" "$VERSION" "$APP_PATH" "$DEST"
 
 echo "Regenerating appcast..."
