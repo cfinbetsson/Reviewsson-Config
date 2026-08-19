@@ -15,10 +15,16 @@ https://cfinbetsson.github.io/Reviewsson-Config/appcast.xml
 ```
 docs/
   appcast.xml        # generated update feed (served at the site root)
-  index.html         # simple landing page
-  releases/          # notarized app .zip archives go here
+  index.html         # landing page (auto-links the latest release)
+  appicon.png        # app icon used on the landing page
+  releases/          # notarized app .dmg releases go here
+assets/
+  dmg-background.png # DMG window background (arrow -> Applications)
 scripts/
-  publish.sh         # regenerates docs/appcast.xml from docs/releases/
+  make-dmg-background.swift  # regenerates assets/dmg-background.png
+  make-dmg.sh                # builds a styled drag-to-Applications DMG (optional notarize)
+  package-release.sh         # make-dmg + publish in one step
+  publish.sh                 # regenerates & signs docs/appcast.xml from docs/releases/
 ```
 
 GitHub Pages serves the contents of `docs/` at the site root, so
@@ -32,12 +38,26 @@ GitHub Pages serves the contents of `docs/` at the site root, so
 
 ## Publishing an update
 
-1. Archive & notarize Reviewsson, then export the app and zip it (bump
-   `CFBundleVersion` / `CFBundleShortVersionString` first).
-2. Copy the `.zip` into `docs/releases/`.
-3. Run `./scripts/publish.sh` — this signs each archive with your EdDSA private
-   key (read from the login keychain) and rewrites `docs/appcast.xml`.
-4. Commit and push. GitHub Pages redeploys the feed automatically.
+1. Archive & export Reviewsson from Xcode (Direct Distribution notarizes & staples
+   the app). Bump `CFBundleVersion` / `CFBundleShortVersionString` first.
+2. Run the one-step release from this repo:
+
+   ```
+   ./scripts/package-release.sh <version> /path/to/Reviewsson.app
+   ```
+
+   This builds a styled drag-to-Applications `.dmg` into `docs/releases/`, signs it
+   with your EdDSA key, and rewrites `docs/appcast.xml`.
+3. Commit and push. GitHub Pages redeploys the feed and download page automatically.
+
+### DMG options
+
+- **Notarize the DMG** (recommended for a clean first-run): configure once with
+  `xcrun notarytool store-credentials "Reviewsson-Notary" --apple-id <you> --team-id C799AMZVK8`.
+  `make-dmg.sh` then notarizes + staples automatically. Skip with `SKIP_NOTARIZE=1`,
+  or use a different profile via `NOTARY_PROFILE=<name>`.
+- **DMG background**: edit `scripts/make-dmg-background.swift` and re-run it to
+  regenerate `assets/dmg-background.png`; `make-dmg.sh` picks it up automatically.
 
 ## Security
 

@@ -56,3 +56,21 @@ create-dmg \
   "$STAGE"
 
 echo "Wrote $OUT"
+
+# Optional notarization of the DMG itself (the app inside is already notarized).
+# Skipped with SKIP_NOTARIZE=1. Uses the keychain profile in NOTARY_PROFILE.
+NOTARY_PROFILE="${NOTARY_PROFILE:-Reviewsson-Notary}"
+if [ "${SKIP_NOTARIZE:-0}" = "1" ]; then
+  echo "Skipping DMG notarization (SKIP_NOTARIZE=1)."
+else
+  echo "Notarizing DMG using keychain profile '$NOTARY_PROFILE'..."
+  if xcrun notarytool submit "$OUT" --keychain-profile "$NOTARY_PROFILE" --wait; then
+    xcrun stapler staple "$OUT"
+    echo "DMG notarized and stapled."
+  else
+    echo "warning: notarization skipped/failed (no '$NOTARY_PROFILE' profile?)." >&2
+    echo "         The app inside is already stapled, so it still runs; the DMG just" >&2
+    echo "         isn't notarized. Configure once to enable it:" >&2
+    echo "         xcrun notarytool store-credentials \"$NOTARY_PROFILE\" --apple-id <you> --team-id C799AMZVK8" >&2
+  fi
+fi
