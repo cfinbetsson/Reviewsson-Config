@@ -57,20 +57,26 @@ create-dmg \
 
 echo "Wrote $OUT"
 
-# Optional notarization of the DMG itself (the app inside is already notarized).
-# Skipped with SKIP_NOTARIZE=1. Uses the keychain profile in NOTARY_PROFILE.
+# Notarize + staple the DMG. Skipped only with SKIP_NOTARIZE=1. A failure here is
+# fatal so we never ship an un-notarized DMG (which fails Gatekeeper as "can't be opened").
 NOTARY_PROFILE="${NOTARY_PROFILE:-Reviewsson-Notary}"
 if [ "${SKIP_NOTARIZE:-0}" = "1" ]; then
   echo "Skipping DMG notarization (SKIP_NOTARIZE=1)."
 else
   echo "Notarizing DMG using keychain profile '$NOTARY_PROFILE'..."
-  if xcrun notarytool submit "$OUT" --keychain-profile "$NOTARY_PROFILE" --wait; then
-    xcrun stapler staple "$OUT"
-    echo "DMG notarized and stapled."
-  else
-    echo "warning: notarization skipped/failed (no '$NOTARY_PROFILE' profile?)." >&2
-    echo "         The app inside is already stapled, so it still runs; the DMG just" >&2
-    echo "         isn't notarized. Configure once to enable it:" >&2
-    echo "         xcrun notarytool store-credentials \"$NOTARY_PROFILE\" --apple-id <you> --team-id C799AMZVK8" >&2
+  if ! xcrun notarytool submit "$OUT" --keychain-profile "$NOTARY_PROFILE" --wait; then
+    echo "error: notarization failed. Not shipping an un-notarized DMG." >&2
+    echo "       Check credentials: xcrun notarytool history --keychain-profile \"$NOTARY_PROFILE\"" >&2
+    exit 1
   fi
+  if ! xcrun stapler staple "$OUT"; then
+    echo "error: stapling failed after notarization." >&2
+    exit 1
+  fi
+  # Verify Gatekeeper actually accepts the result before declaring success.
+  if ! xcrun stapler validate "$OUT"; then
+    echo "error: staple validation failed." >&2
+    exit 1
+  fi
+  echo "DMG notarized and stapled."
 fi
