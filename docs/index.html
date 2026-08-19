@@ -3,36 +3,201 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Download Reviewsson</title>
+    <title>Reviewsson for macOS</title>
+    <meta name="description" content="Reviewsson — performance reviews, powered by your Jira data. Download for macOS." />
     <style>
-      :root { color-scheme: light dark; }
-      body { font-family: -apple-system, system-ui, sans-serif; max-width: 34rem; margin: 4rem auto; padding: 0 1rem; line-height: 1.5; text-align: center; }
-      h1 { margin-bottom: 0.25rem; }
-      .sub { color: #888; margin-top: 0; }
-      .download { display: inline-block; margin: 1.5rem 0 0.5rem; padding: 0.8rem 1.6rem; font-size: 1.05rem; font-weight: 600; color: #fff; background: #0a84ff; border-radius: 10px; text-decoration: none; }
-      .download:hover { background: #0060df; }
-      .meta { color: #888; font-size: 0.9rem; }
-      .feed { margin-top: 2.5rem; font-size: 0.85rem; color: #999; }
+      :root {
+        color-scheme: light dark;
+        --bg: #f5f5f7;
+        --bg2: #e9eef5;
+        --card: rgba(255, 255, 255, 0.72);
+        --card-border: rgba(0, 0, 0, 0.08);
+        --text: #1d1d1f;
+        --muted: #6e6e73;
+        --accent: #0a84ff;
+        --accent-hover: #0060df;
+        --shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0b0b0f;
+          --bg2: #16161d;
+          --card: rgba(28, 28, 34, 0.72);
+          --card-border: rgba(255, 255, 255, 0.10);
+          --text: #f5f5f7;
+          --muted: #9a9aa2;
+          --shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        }
+      }
+
+      * { box-sizing: border-box; }
+      html, body { height: 100%; }
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif;
+        color: var(--text);
+        background:
+          radial-gradient(1200px 600px at 50% -10%, var(--bg2), transparent 60%),
+          var(--bg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        padding: 2rem 1rem;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .card {
+        width: 100%;
+        max-width: 30rem;
+        background: var(--card);
+        border: 1px solid var(--card-border);
+        border-radius: 24px;
+        box-shadow: var(--shadow);
+        backdrop-filter: saturate(180%) blur(20px);
+        -webkit-backdrop-filter: saturate(180%) blur(20px);
+        padding: 2.75rem 2rem 2rem;
+        text-align: center;
+      }
+
+      .icon {
+        width: 92px;
+        height: 92px;
+        margin: 0 auto 1.25rem;
+        border-radius: 21px;
+        background: linear-gradient(160deg, #4f9dff, #0a84ff 55%, #6b4bff);
+        box-shadow: 0 10px 26px rgba(10, 132, 255, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .icon svg { width: 52px; height: 52px; }
+
+      h1 { margin: 0; font-size: 2rem; letter-spacing: -0.02em; }
+      .tagline { margin: 0.35rem 0 0; color: var(--muted); font-size: 1.05rem; }
+
+      .download {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.55rem;
+        margin: 1.75rem 0 0.6rem;
+        padding: 0.85rem 1.7rem;
+        font-size: 1.05rem;
+        font-weight: 600;
+        color: #fff;
+        background: var(--accent);
+        border-radius: 12px;
+        text-decoration: none;
+        transition: background 0.15s ease, transform 0.1s ease;
+      }
+      .download:hover { background: var(--accent-hover); }
+      .download:active { transform: scale(0.98); }
+      .download svg { width: 18px; height: 18px; }
+      .download.disabled { background: var(--muted); pointer-events: none; opacity: 0.7; }
+
+      .meta { color: var(--muted); font-size: 0.9rem; margin: 0.25rem 0 0; min-height: 1.2em; }
+
+      .features {
+        list-style: none;
+        padding: 0;
+        margin: 2rem 0 0;
+        display: grid;
+        gap: 0.6rem;
+        text-align: left;
+      }
+      .features li {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+        color: var(--text);
+        font-size: 0.95rem;
+      }
+      .features .check {
+        flex: none;
+        width: 20px; height: 20px;
+        border-radius: 50%;
+        background: rgba(10, 132, 255, 0.15);
+        color: var(--accent);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        font-weight: 700;
+      }
+
+      .feed {
+        margin: 2rem 0 0;
+        padding-top: 1.25rem;
+        border-top: 1px solid var(--card-border);
+        font-size: 0.8rem;
+        color: var(--muted);
+      }
       .feed a { color: inherit; }
+
+      .spinner {
+        width: 18px; height: 18px;
+        border: 2px solid var(--muted);
+        border-top-color: transparent;
+        border-radius: 50%;
+        display: inline-block;
+        vertical-align: -3px;
+        animation: spin 0.8s linear infinite;
+        margin-right: 0.4rem;
+      }
+      @keyframes spin { to { transform: rotate(360deg); } }
     </style>
   </head>
   <body>
-    <h1>Reviewsson</h1>
-    <p class="sub">for macOS</p>
+    <main class="card">
+      <div class="icon" aria-hidden="true">
+        <!-- Simple chart/review glyph -->
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 19V5" />
+          <path d="M4 19h16" />
+          <path d="M8 16l3-4 3 2 4-6" />
+        </svg>
+      </div>
 
-    <div id="download-area">
-      <p>Loading the latest version…</p>
-    </div>
+      <h1>Reviewsson</h1>
+      <p class="tagline">Performance reviews, powered by your Jira data.</p>
 
-    <p class="feed">Auto-updates are delivered via <a href="appcast.xml">appcast.xml</a>.</p>
+      <div id="download-area">
+        <a class="download disabled" href="#" aria-disabled="true">
+          <span class="spinner"></span> Loading…
+        </a>
+        <p class="meta">Fetching the latest version…</p>
+      </div>
+
+      <ul class="features">
+        <li><span class="check">&#10003;</span> Pulls tickets &amp; metrics straight from Jira</li>
+        <li><span class="check">&#10003;</span> AI-assisted review summaries</li>
+        <li><span class="check">&#10003;</span> Secure, signed automatic updates</li>
+      </ul>
+
+      <p class="feed">
+        Runs on macOS 14+ · Auto-updates via <a href="appcast.xml">appcast.xml</a>
+      </p>
+    </main>
 
     <script>
       // Reads the Sparkle appcast and links to the newest release's enclosure.
       const S = "http://www.andymatuschak.org/xml-namespaces/sparkle";
+      const area = document.getElementById("download-area");
+
+      const downloadIcon =
+        '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" ' +
+        'stroke-linecap="round" stroke-linejoin="round">' +
+        '<path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M5 21h14"/></svg>';
 
       function text(item, localName) {
         const el = item.getElementsByTagNameNS(S, localName)[0];
         return el ? el.textContent.trim() : "";
+      }
+
+      function escapeAttr(s) {
+        return String(s).replace(/[&<>"']/g, (c) =>
+          ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c])
+        );
       }
 
       fetch("appcast.xml", { cache: "no-store" })
@@ -55,16 +220,19 @@
           const pub = latest.getElementsByTagName("pubDate")[0];
 
           const parts = [];
-          if (pub) parts.push(new Date(pub.textContent).toLocaleDateString());
-          if (minOS) parts.push("Requires macOS " + minOS + "+");
+          if (pub) parts.push("Released " + new Date(pub.textContent).toLocaleDateString());
+          if (minOS) parts.push("macOS " + minOS + "+");
 
-          document.getElementById("download-area").innerHTML =
-            '<a class="download" href="' + url + '">Download ' + shortVersion + "</a>" +
+          area.innerHTML =
+            '<a class="download" href="' + escapeAttr(url) + '">' +
+              downloadIcon + " Download " + escapeAttr(shortVersion) +
+            "</a>" +
             (parts.length ? '<p class="meta">' + parts.join(" · ") + "</p>" : "");
         })
         .catch(() => {
-          document.getElementById("download-area").innerHTML =
-            '<p>Couldn\u2019t load the latest release. See <a href="appcast.xml">appcast.xml</a>.</p>';
+          area.innerHTML =
+            '<a class="download disabled" href="appcast.xml">Latest release unavailable</a>' +
+            '<p class="meta">See <a href="appcast.xml">appcast.xml</a></p>';
         });
     </script>
   </body>
