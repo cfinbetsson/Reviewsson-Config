@@ -1,0 +1,12 @@
+# macOS
+.DS_Store
+
+# NEVER commit signing keys — the EdDSA private key lives in your login keychain.
+*.pem
+*.key
+eddsa_priv*
+dsa_priv*
+private*
+
+# Sparkle tool downloads
+Sparkle-*.tar.xz
