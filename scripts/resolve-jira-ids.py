@@ -203,7 +203,7 @@ def main() -> None:
         return
 
     with open(args.input, "w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer = csv.DictWriter(f, fieldnames=fieldnames, lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
     print(f"Updated {args.input}. Review, then commit & push to publish.")
