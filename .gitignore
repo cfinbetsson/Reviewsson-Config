@@ -10,3 +10,5 @@ private*
 
 # Sparkle tool downloads
 Sparkle-*.tar.xz
+__pycache__/
+*.pyc
