@@ -34,6 +34,7 @@ import base64
 import csv
 import json
 import os
+import ssl
 import subprocess
 import sys
 import time
@@ -83,12 +84,36 @@ def auth_header(email: str, token: str) -> str:
     return "Basic " + base64.b64encode(raw).decode("ascii")
 
 
+def make_ssl_context() -> ssl.SSLContext:
+    """Verified TLS context, using certifi's CA bundle when available."""
+    try:
+        import certifi
+        return ssl.create_default_context(cafile=certifi.where())
+    except ModuleNotFoundError:
+        return ssl.create_default_context()
+
+
+SSL_CONTEXT = make_ssl_context()
+
+SSL_HELP = (
+    "\nTLS certificate verification failed: this Python has no CA bundle.\n"
+    "Fix it once, then re-run this script:\n"
+    '  open "/Applications/Python 3.13/Install Certificates.command"\n'
+    "  (or: python3 -m pip install --upgrade certifi)\n"
+)
+
+
+def is_cert_error(err: Exception) -> bool:
+    reason = getattr(err, "reason", err)
+    return isinstance(reason, ssl.SSLError) and "CERTIFICATE_VERIFY_FAILED" in str(reason)
+
+
 def find_account_id(site: str, header: str, email: str) -> str | None:
     url = f"https://{site}/rest/api/3/user/search?query=" + urllib.parse.quote(email)
     req = urllib.request.Request(
         url, headers={"Authorization": header, "Accept": "application/json"}
     )
-    with urllib.request.urlopen(req, timeout=20) as resp:
+    with urllib.request.urlopen(req, timeout=20, context=SSL_CONTEXT) as resp:
         users = json.load(resp)
     if not users:
         return None
@@ -138,8 +163,17 @@ def main() -> None:
         try:
             account_id = find_account_id(args.site, header, person_email)
         except urllib.error.HTTPError as e:
+            if e.code in (401, 403):
+                sys.exit(f"\nJira rejected the request (HTTP {e.code}). "
+                         "Check JIRA_EMAIL / JIRA_TOKEN.")
             errored += 1
             print(f"  !  {name} ({person_email}): HTTP {e.code}")
+            continue
+        except urllib.error.URLError as e:
+            if is_cert_error(e):
+                sys.exit(SSL_HELP)
+            errored += 1
+            print(f"  !  {name} ({person_email}): {e}")
             continue
         except Exception as e:  # noqa: BLE001 - report and continue
             errored += 1
