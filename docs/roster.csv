@@ -1,91 +1,91 @@
 name,discipline,stream,role,seniority,manager,email,jiraAccountId
-Adamantia Eleni Stamelaki,Android,Sportsbook,Tech Lead,Lead,Luca Di Michele,adamantiaeleni.stamelaki@betssongroup.com,
-Ajay Goyal,Android,Wrapper,Android Engineer,Senior,Conlagh Finnegan,ajay.goyal@betssongroup.com,
-Aleksander Byczkow,Android,Sportsbook,Android Engineer,Senior,Hakan Kanmaz,aleksander.byczkow@betssongroup.com,
+Adamantia Eleni Stamelaki,Android,Sportsbook,Tech Lead,Lead,Luca Di Michele,adamantiaeleni.stamelaki@betssongroup.com,712020:abc34c78-4eae-482b-866f-b57acb0aaf5d
+Ajay Goyal,Android,Wrapper,Android Engineer,Senior,Conlagh Finnegan,ajay.goyal@betssongroup.com,712020:541fb7f8-a90b-4645-86bd-ecb0219c6aad
+Aleksander Byczkow,Android,Sportsbook,Android Engineer,Senior,Hakan Kanmaz,aleksander.byczkow@betssongroup.com,712020:1073aef3-99fe-4cc9-a6c8-0d84c61618b5
 Alex Rivas,Android,Sportsbook,Android Engineer,Senior,Mark Spiteri,,
-Andres Beltran Rocha,Android,Sportsbook,Android Engineer,Middle,Conlagh Finnegan,andres.beltranrocha@betssongroup.com,
-Antonio Cirielli,Android,PAM,Android Engineer,Senior,Conlagh Finnegan,antonio.cirielli@betssongroup.com,
-Christian Castaldi,Android,Platform,Tech Lead,Lead,Luca Di Michele,christian.castaldi@betssongroup.com,
-David Gormally,Android,ExEn,Android Engineer,Middle,Mark Spiteri,david.gormally@betssongroup.com,
-Dimitris Garofalakis,Android,Sportsbook,Android Engineer,Senior,Mark Spiteri,dimitris.garofalakis@betssongroup.com,
-Erdi Ozbek,Android,Sportsbook,Android Engineer,Middle,Hakan Kanmaz,erdi.ozbek@betssongroup.com,
-Filippos Katzilieris,Android,PAM,Android Engineer,Middle,Hakan Kanmaz,filippos.katzilieris@betssongroup.com,
-Giorgos Spiropoulos,Android,Sportsbook,Android Engineer,Middle,Hakan Kanmaz,georgios.spyropoulos@betssongroup.com,
-Helder Rocha Da Silva,Android,PAM,Android Engineer,Middle,Hakan Kanmaz,helder.rochadasilva@betssongroup.com,
-Joel Colmenares Barradas,Android,Platform,Android Engineer,Senior,Mark Spiteri,joel.colmenaresbarradas@betssongroup.com,
-Lucas Dos Santos,Android,Sportsbook,Android Engineer,Senior,Mark Spiteri,lucas.dossantos@betssongroup.com,
-Luiz Eduardo do Prado,Android,Sportsbook,Tech Lead,Lead,Luca Di Michele,luiz.doprado@betssongroup.com,
-Malik Shahzad,Android,Gaming,Android Engineer,Senior,Mark Spiteri,malik.shahzad@betssongroup.com,
-Mariia Khaleta,Android,Sportsbook,Android Engineer,Middle,Hakan Kanmaz,mariia.khaleta@betssongroup.com,
-Michalis Korelidis,Android,Sportsbook,Android Engineer,Senior,Mark Spiteri,michail.korelidis@betssongroup.com,
-Miguel Zea Guerrero,Android,PAM,Android Engineer,Middle,Hakan Kanmaz,miguel.zeaguerrero@betssongroup.com,
-Pantelis Chasapis,Android,ExEn,Android Engineer,Senior,Mark Spiteri,panteleimon.chasapis@betssongroup.com,
-Petter Jhunior Garcia Infante,Android,ExEn,Android Engineer,Senior,Conlagh Finnegan,petter.garciainfante@betssongroup.com,
-Rafael Alexánder Bermúdez Riveros,Android,Gaming,Android Engineer,Senior,Conlagh Finnegan,rafael.bermudezriveros@betssongroup.com,
-Regina Kapros Bindasz,Android,PAM,Android Engineer,Senior,Hakan Kanmaz,regina.kaprosbindasz@betssongroup.com,
-Rohit Gupta,Android,Sportsbook,Android Engineer,Senior,Mark Spiteri,rohit.gupta@betssongroup.com,
-Saber Ouechtati,Android,Platform,Android Engineer,Senior,Hakan Kanmaz,saber.ouechtati@betssongroup.com,
-Sevak Mardirosian,Android,Sportsbook,Android Engineer,Senior,Hakan Kanmaz,sevak.mardirosian@betssongroup.com,
-Szabolcs Magyar,Android,Sportsbook,Android Engineer,Senior,Hakan Kanmaz,szabolcs.magyar@betssongroup.com,
-Thanos Kintonis,Android,ExEn,Android Engineer,Middle,Hakan Kanmaz,athanasios.kintonis@betssongroup.com,
-Vinay Gupta,Android,PAM,Android Engineer,Senior,Hakan Kanmaz,vinay.gupta@betssongroup.com,
-Yurii Pylypenko,Android,Sportsbook,Android Engineer,Middle,Hakan Kanmaz,yurii.pylypenko@betssongroup.com,
-Zaqueu Santos,Android,Gaming,Android Engineer,Middle,Conlagh Finnegan,zaqueu.santos@betssongroup.com,
-Conlagh Finnegan,General,General,Engineering Manager,Manager,Luca Di Michele,conlagh.finnegan@betssongroup.com,
-Hakan Kanmaz,General,General,Engineering Manager,Manager,Luca Di Michele,hakan.kanmaz@betssongroup.com,
-Jean Azzopardi,General,General,Architect,Manager,Catalin Baciu,jean.azzopardi@betssongroup.com,
-Kerem Kusmezer,General,General,Architect,Manager,Catalin Baciu,kerem.kusmezer@betssongroup.com,
-Luca Di Michele,General,General,Head of Engineering,Manager,Matthew Micallef,luca.dimichele@betssongroup.com,
-Maria Corpus,General,General,Release Manager,Middle,Luca Di Michele,maria.corpus@betssongroup.com,
-Mark Spiteri,General,General,Engineering Manager,Manager,Luca Di Michele,mark.spiteri@betssongroup.com,
-Alexandros Gaitanidis,Nativesson,Nativesson,Backend Engineer,Senior,Mark Spiteri,alexandros.gaitanidis@betssongroup.com,
-Carlos Alain Quintana Valdés,Nativesson,Nativesson,Backend Engineer,Senior,Mark Spiteri,carlos.quintanavaldes@betssongroup.com,
-Ioannis Droumpalis,Nativesson,Nativesson,Backend Engineer,Senior,Mark Spiteri,ioannismarios.droumpalis@betssongroup.com,
-Yunus Keskin,Nativesson,Nativesson,Backend Engineer,Senior,Mark Spiteri,yunus.keskin@betssongroup.com,
-Adriana Ramirez,QA,PAM,QA Engineer,Middle,Selim Cakar,adriana.ramirez@betssongroup.com,
-Alpay Alin,QA,Gaming,QA Engineer,Middle,Selim Cakar,alpay.alin@betssongroup.com,
-Anastasios Malandris,QA,Sportsbook,QA Engineer,Middle,Selim Cakar,anastasios.malandris@betssongroup.com,
-Bhawna Gupta,QA,Wrapper,QA Engineer,Senior,Selim Cakar,bhawna.gupta@betssongroup.com,
-Eris Imami,QA,PAM,QA Engineer,Senior,Selim Cakar,eris.imami@betssongroup.com,
-Francisco Segura,QA,Sportsbook,QA Engineer,Middle,Selim Cakar,francisco.segura@betssongroup.com,
-Guillermina Claros Garrido,QA,Sportsbook,QA Engineer,Senior,Selim Cakar,guillermina.claros@betssongroup.com,
-Kishorekumar Kuppuswamy,QA,ExEn,QA Engineer,Senior,Selim Cakar,kishorekumar.kuppuswamy@betssongroup.com,
-Konstantinos Ntzoufras,QA,Sportsbook,QA Engineer,Senior,Selim Cakar,konstantinos.ntzoufras@betssongroup.com,
-Kyriaki Triantafyllou,QA,ExEn,QA Engineer,Middle,Selim Cakar,kyriaki.triantafyllou@betssongroup.com,
-Lydia Tsagari,QA,Sportsbook,QA Tech Lead,Lead,Selim Cakar,lydia.tsagari@betssongroup.com,
-Madalina Chivu,QA,Gaming,QA Engineer,Middle,Selim Cakar,madalina.chivu@betssongroup.com,
-Nevin Karasu,QA,ExEn,QA Engineer,Middle,Selim Cakar,nevin.karasu@betssongroup.com,
-Rebeca Modrego Serrano,QA,Platform,QA Engineer,Senior,Selim Cakar,rebeca.modrego@betssongroup.com,
-Rupali Singh,QA,Sportsbook,QA Engineer,Senior,Selim Cakar,rupali.singh@betssongroup.com,
-Selim Cakar,QA,Platform,QA Manager,Lead,Luca Di Michele,selim.cakar@betssongroup.com,
-Suryamanasa Gutti,QA,Sportsbook,QA Engineer,Senior,Selim Cakar,suryamanasa.gutti@betssongroup.com,
-Warren Griscti,QA,PAM,QA Engineer,Senior,Selim Cakar,warren.griscti@betssongroup.com,
-Andia Doma,iOS,Sportsbook,iOS Engineer,Senior,Conlagh Finnegan,andia.doma@betssongroup.com,
-Arthur Demanuele,iOS,Platform,Tech Lead,Lead,Luca Di Michele,arthur.demanuele@betssongroup.com,
-Arthur Rodrigues,iOS,Sportsbook,iOS Engineer,Middle,Conlagh Finnegan,arthur.rodrigues@betssongroup.com,
-Bruno Rigo Werminghoff,iOS,Platform,iOS Engineer,Senior,Conlagh Finnegan,bruno.rigowerminghoff@betssongroup.com,
-Christos Condrea,iOS,ExEn,iOS Engineer,Middle,Mark Spiteri,christos.condrea@betssongroup.com,
-Douglas Gondim,iOS,PAM,iOS Engineer,Senior,Hakan Kanmaz,douglas.gondim@betssongroup.com,
-Evangelos Pittas,iOS,Sportsbook,iOS Engineer,Middle,Mark Spiteri,evangelos.pittas@betssongroup.com,
-Guilherme de Assis dos Santos,iOS,Sportsbook,iOS Engineer,Middle,Hakan Kanmaz,guilherme.deassisdossantos@betssongroup.com,
-Hugo Oliveira,iOS,Sportsbook,iOS Engineer,Senior,Mark Spiteri,hugo.oliveiracoutinho@betssongroup.com,
-Jakub Gawecki,iOS,PAM,iOS Engineer,Senior,Mark Spiteri,jakub.gawecki@betssongroup.com,
-Jhonattan Solarte Martinez,iOS,Gaming,iOS Engineer,Middle,Mark Spiteri,jhonattan.solartemartinez@betssongroup.com,
-Jose Maria Martinez,iOS,Sportsbook,iOS Engineer,Senior,Hakan Kanmaz,jose.martinez@betssongroup.com,
-Julian Arias Maetsch,iOS,PAM,iOS Engineer,Senior,Hakan Kanmaz,julian.ariasmaetschl@betssongroup.com,
-Kai Busuttil,iOS,Gaming,iOS Engineer,Middle,Hakan Kanmaz,kai.busuttil@betssongroup.com,
-Kristijan Mileski,iOS,Platform,iOS Engineer,Senior,Conlagh Finnegan,kristijan.mileski@betssongroup.com,
-Maciej Szostak,iOS,PAM,iOS Engineer,Middle,Conlagh Finnegan,maciej.szostak@betssongroup.com,
-Michael Favre,iOS,ExEn,iOS Engineer,Middle,Mark Spiteri,michael.favre@betssongroup.com,
-Milika Delic,iOS,Sportsbook,iOS Engineer,Senior,Conlagh Finnegan,milika.delic@betssongroup.com,
-Oleksandr Kuznietsov,iOS,PAM,iOS Engineer,Senior-,Mark Spiteri,oleksandr.kuznietsov@betssongroup.com,
-Pankaj Pal,iOS,Wrapper,iOS Engineer,Senior,Mark Spiteri,pankaj.pal@betssongroup.com,
-Rodolfo Roca Neto,iOS,Sportsbook,iOS Engineer,Middle,Conlagh Finnegan,rodolfo.rocaneto@betssongroup.com,
-Samuel Sierra Contreras,iOS,Sportsbook,iOS Engineer,Senior,Hakan Kanmaz,samuel.sierracontreras@betssongroup.com,
-Simon Rebiere,iOS,Sportsbook,iOS Engineer,Middle,Mark Spiteri,simon.rebiere@betssongroup.com,
-Spyridon Skordos,iOS,Sportsbook,iOS Engineer,Senior,Mark Spiteri,spyridon.skordos@betssongroup.com,
-Stefan Veljanov,iOS,Sportsbook,iOS Engineer,Senior,Hakan Kanmaz,stefan.veljanov@betssongroup.com,
-Steffen Blümm,iOS,ExEn,iOS Engineer,Senior,Conlagh Finnegan,steffen.bluemm@betssongroup.com,
-Tigran Gishyan,iOS,Sportsbook,Tech Lead,Lead,Luca Di Michele,tigran.gishyan@betssongroup.com,
-Uttam Pandey,iOS,Gaming,iOS Engineer,Middle,Hakan Kanmaz,uttam.pandey@betssongroup.com,
-Viktor Richard Ban,iOS,PAM,Tech Lead,Lead,Luca Di Michele,viktor.ban@betssongroup.com,
+Andres Beltran Rocha,Android,Sportsbook,Android Engineer,Middle,Conlagh Finnegan,andres.beltranrocha@betssongroup.com,712020:b273f92d-df52-4316-85a9-cb75475a6ada
+Antonio Cirielli,Android,PAM,Android Engineer,Senior,Conlagh Finnegan,antonio.cirielli@betssongroup.com,712020:74174ef0-ba2e-4878-838c-02ad780baa51
+Christian Castaldi,Android,Platform,Tech Lead,Lead,Luca Di Michele,christian.castaldi@betssongroup.com,60ca021ed5dde80071095db4
+David Gormally,Android,ExEn,Android Engineer,Middle,Mark Spiteri,david.gormally@betssongroup.com,712020:88f945b5-004b-4cd6-a00b-45da81dddf1c
+Dimitris Garofalakis,Android,Sportsbook,Android Engineer,Senior,Mark Spiteri,dimitris.garofalakis@betssongroup.com,712020:13d3b38c-af5c-47f0-a1ed-1d98d69b0337
+Erdi Ozbek,Android,Sportsbook,Android Engineer,Middle,Hakan Kanmaz,erdi.ozbek@betssongroup.com,712020:9ba6c2b7-5891-4cd7-a31c-ec950af399c1
+Filippos Katzilieris,Android,PAM,Android Engineer,Middle,Hakan Kanmaz,filippos.katzilieris@betssongroup.com,712020:7a1b7ed4-fc5f-4153-94e3-d4a5178cf5b5
+Giorgos Spiropoulos,Android,Sportsbook,Android Engineer,Middle,Hakan Kanmaz,georgios.spyropoulos@betssongroup.com,712020:053054b0-e857-4c4f-a0c0-ba53fbf7fa55
+Helder Rocha Da Silva,Android,PAM,Android Engineer,Middle,Hakan Kanmaz,helder.rochadasilva@betssongroup.com,712020:1b5b3436-3e69-4226-8b41-5526f2995b67
+Joel Colmenares Barradas,Android,Platform,Android Engineer,Senior,Mark Spiteri,joel.colmenaresbarradas@betssongroup.com,712020:3c7f2298-a13a-41c7-90ef-b3c06cb0f4d0
+Lucas Dos Santos,Android,Sportsbook,Android Engineer,Senior,Mark Spiteri,lucas.dossantos@betssongroup.com,712020:960cd152-29c5-4046-837c-eb3ca2bae2e0
+Luiz Eduardo do Prado,Android,Sportsbook,Tech Lead,Lead,Luca Di Michele,luiz.doprado@betssongroup.com,712020:0bf9586c-f318-42ab-83c0-53f2d04c5cac
+Malik Shahzad,Android,Gaming,Android Engineer,Senior,Mark Spiteri,malik.shahzad@betssongroup.com,712020:22e85263-852d-413d-92e6-a0f46859d9f9
+Mariia Khaleta,Android,Sportsbook,Android Engineer,Middle,Hakan Kanmaz,mariia.khaleta@betssongroup.com,712020:240c5ff8-501d-490c-86c4-14a6cf3f6d70
+Michalis Korelidis,Android,Sportsbook,Android Engineer,Senior,Mark Spiteri,michail.korelidis@betssongroup.com,712020:dc871978-c010-4969-a402-c538ca48ace1
+Miguel Zea Guerrero,Android,PAM,Android Engineer,Middle,Hakan Kanmaz,miguel.zeaguerrero@betssongroup.com,712020:a73e01e3-8e29-4653-8586-a66f53b0366f
+Pantelis Chasapis,Android,ExEn,Android Engineer,Senior,Mark Spiteri,panteleimon.chasapis@betssongroup.com,712020:9141083f-d201-4caf-b00a-d908bb9466e1
+Petter Jhunior Garcia Infante,Android,ExEn,Android Engineer,Senior,Conlagh Finnegan,petter.garciainfante@betssongroup.com,712020:09ff88d0-a266-428a-ae9c-20ffe1451e69
+Rafael Alexánder Bermúdez Riveros,Android,Gaming,Android Engineer,Senior,Conlagh Finnegan,rafael.bermudezriveros@betssongroup.com,712020:9cf80a4f-7b27-4fa8-953b-437046b1f725
+Regina Kapros Bindasz,Android,PAM,Android Engineer,Senior,Hakan Kanmaz,regina.kaprosbindasz@betssongroup.com,712020:7422f6c5-b8c4-415b-97c1-50b47bdcf572
+Rohit Gupta,Android,Sportsbook,Android Engineer,Senior,Mark Spiteri,rohit.gupta@betssongroup.com,712020:79153c72-19c0-4ed4-ad8f-6cd23893a9d1
+Saber Ouechtati,Android,Platform,Android Engineer,Senior,Hakan Kanmaz,saber.ouechtati@betssongroup.com,712020:8bbddf63-34d6-4bfe-abe6-43825b0a664d
+Sevak Mardirosian,Android,Sportsbook,Android Engineer,Senior,Hakan Kanmaz,sevak.mardirosian@betssongroup.com,712020:0f697444-9757-4e55-80bd-d58919d10902
+Szabolcs Magyar,Android,Sportsbook,Android Engineer,Senior,Hakan Kanmaz,szabolcs.magyar@betssongroup.com,712020:7f975f15-92cf-4157-b01f-334420663904
+Thanos Kintonis,Android,ExEn,Android Engineer,Middle,Hakan Kanmaz,athanasios.kintonis@betssongroup.com,712020:15d2621e-9eb3-4a56-9763-e6b6231e185a
+Vinay Gupta,Android,PAM,Android Engineer,Senior,Hakan Kanmaz,vinay.gupta@betssongroup.com,712020:7d5616ac-e7e5-4d12-b8cd-51ca24baac56
+Yurii Pylypenko,Android,Sportsbook,Android Engineer,Middle,Hakan Kanmaz,yurii.pylypenko@betssongroup.com,712020:5cdff54f-7e35-45fa-932d-862c4ce815f2
+Zaqueu Santos,Android,Gaming,Android Engineer,Middle,Conlagh Finnegan,zaqueu.santos@betssongroup.com,712020:75db300a-e7e7-4897-8b94-9101cb5863a0
+Conlagh Finnegan,General,General,Engineering Manager,Manager,Luca Di Michele,conlagh.finnegan@betssongroup.com,712020:73622161-c334-49bf-950b-03479b6767c1
+Hakan Kanmaz,General,General,Engineering Manager,Manager,Luca Di Michele,hakan.kanmaz@betssongroup.com,712020:201439e2-2777-49e8-8f81-937414464344
+Jean Azzopardi,General,General,Architect,Manager,Catalin Baciu,jean.azzopardi@betssongroup.com,557058:55b99f21-c405-43eb-99cc-76009bea8e39
+Kerem Kusmezer,General,General,Architect,Manager,Catalin Baciu,kerem.kusmezer@betssongroup.com,712020:d89f07d7-e437-4f57-bcaf-ed02f051029e
+Luca Di Michele,General,General,Head of Engineering,Manager,Matthew Micallef,luca.dimichele@betssongroup.com,712020:c39ac598-865d-43fd-9a4e-482cb40c925e
+Maria Corpus,General,General,Release Manager,Middle,Luca Di Michele,maria.corpus@betssongroup.com,712020:77723466-11ff-4d78-bbb6-3df0134eb1f2
+Mark Spiteri,General,General,Engineering Manager,Manager,Luca Di Michele,mark.spiteri@betssongroup.com,557058:252a8cd3-4fb3-48a3-bab7-bfa86255c2ec
+Alexandros Gaitanidis,Nativesson,Nativesson,Backend Engineer,Senior,Mark Spiteri,alexandros.gaitanidis@betssongroup.com,712020:f6896bb3-45e5-49e4-9a2e-307dbc3b6ae4
+Carlos Alain Quintana Valdés,Nativesson,Nativesson,Backend Engineer,Senior,Mark Spiteri,carlos.quintanavaldes@betssongroup.com,712020:e791c815-2a26-4482-96b4-551905c81ee9
+Ioannis Droumpalis,Nativesson,Nativesson,Backend Engineer,Senior,Mark Spiteri,ioannismarios.droumpalis@betssongroup.com,712020:91b45311-f678-48fc-8d9a-0d4834054043
+Yunus Keskin,Nativesson,Nativesson,Backend Engineer,Senior,Mark Spiteri,yunus.keskin@betssongroup.com,712020:8085c2ea-204d-4a37-a8f2-199c7923484c
+Adriana Ramirez,QA,PAM,QA Engineer,Middle,Selim Cakar,adriana.ramirez@betssongroup.com,712020:64267c00-070e-40b3-bc0f-8dc8b528ee97
+Alpay Alin,QA,Gaming,QA Engineer,Middle,Selim Cakar,alpay.alin@betssongroup.com,712020:16c358d1-ad21-4ec3-b8f8-6d6c43b44839
+Anastasios Malandris,QA,Sportsbook,QA Engineer,Middle,Selim Cakar,anastasios.malandris@betssongroup.com,712020:bc44769d-e4fa-474e-a4b7-3a6d1c4e79fb
+Bhawna Gupta,QA,Wrapper,QA Engineer,Senior,Selim Cakar,bhawna.gupta@betssongroup.com,712020:1bb026b5-5bab-4664-9d68-d1f2dc9175d6
+Eris Imami,QA,PAM,QA Engineer,Senior,Selim Cakar,eris.imami@betssongroup.com,712020:6ba3d67e-a103-41aa-a335-8226e05a2446
+Francisco Segura,QA,Sportsbook,QA Engineer,Middle,Selim Cakar,francisco.segura@betssongroup.com,712020:21ac66a1-f20c-4bdd-8248-8bea9dfd7398
+Guillermina Claros Garrido,QA,Sportsbook,QA Engineer,Senior,Selim Cakar,guillermina.claros@betssongroup.com,712020:94183225-a0f1-4266-8871-b5b638f2106d
+Kishorekumar Kuppuswamy,QA,ExEn,QA Engineer,Senior,Selim Cakar,kishorekumar.kuppuswamy@betssongroup.com,712020:adbc7827-cce7-407d-814c-641e0acbff93
+Konstantinos Ntzoufras,QA,Sportsbook,QA Engineer,Senior,Selim Cakar,konstantinos.ntzoufras@betssongroup.com,712020:7c54eadf-3276-4332-9197-122bc04d573c
+Kyriaki Triantafyllou,QA,ExEn,QA Engineer,Middle,Selim Cakar,kyriaki.triantafyllou@betssongroup.com,712020:0ba5e011-8e59-48a8-9cb5-0d1d28d91d31
+Lydia Tsagari,QA,Sportsbook,QA Tech Lead,Lead,Selim Cakar,lydia.tsagari@betssongroup.com,712020:185b47fd-2339-4e0d-b787-713714b5d2d0
+Madalina Chivu,QA,Gaming,QA Engineer,Middle,Selim Cakar,madalina.chivu@betssongroup.com,712020:e40c44ae-b617-4d4f-9e37-8f0bac8fd31b
+Nevin Karasu,QA,ExEn,QA Engineer,Middle,Selim Cakar,nevin.karasu@betssongroup.com,712020:b1c34a8e-8494-41a1-b959-2b9e5c086667
+Rebeca Modrego Serrano,QA,Platform,QA Engineer,Senior,Selim Cakar,rebeca.modrego@betssongroup.com,712020:c4fbd7c2-5604-4004-a48e-bc4661ccd21e
+Rupali Singh,QA,Sportsbook,QA Engineer,Senior,Selim Cakar,rupali.singh@betssongroup.com,712020:de4bc66d-5355-42cb-b03d-b7ac6c9e5cae
+Selim Cakar,QA,Platform,QA Manager,Lead,Luca Di Michele,selim.cakar@betssongroup.com,712020:ca987ea4-19f2-490b-af17-4d7b19de19e5
+Suryamanasa Gutti,QA,Sportsbook,QA Engineer,Senior,Selim Cakar,suryamanasa.gutti@betssongroup.com,712020:78527422-a3cc-4b32-84e1-ced7bbcad91a
+Warren Griscti,QA,PAM,QA Engineer,Senior,Selim Cakar,warren.griscti@betssongroup.com,712020:38f59fc4-9424-444d-ab18-fc3a20a7e8c9
+Andia Doma,iOS,Sportsbook,iOS Engineer,Senior,Conlagh Finnegan,andia.doma@betssongroup.com,712020:11949c16-6e87-4b8e-96cc-755dc3fa8993
+Arthur Demanuele,iOS,Platform,Tech Lead,Lead,Luca Di Michele,arthur.demanuele@betssongroup.com,712020:0d33917c-b380-4a16-89e7-4f5287ed475d
+Arthur Rodrigues,iOS,Sportsbook,iOS Engineer,Middle,Conlagh Finnegan,arthur.rodrigues@betssongroup.com,712020:734016a6-7fc6-4867-a922-78d22e92d24e
+Bruno Rigo Werminghoff,iOS,Platform,iOS Engineer,Senior,Conlagh Finnegan,bruno.rigowerminghoff@betssongroup.com,712020:343f1378-0bb1-427f-af83-34f91a69c9ce
+Christos Condrea,iOS,ExEn,iOS Engineer,Middle,Mark Spiteri,christos.condrea@betssongroup.com,712020:d325f3c4-23f3-43e1-a974-531b5eb6f062
+Douglas Gondim,iOS,PAM,iOS Engineer,Senior,Hakan Kanmaz,douglas.gondim@betssongroup.com,712020:907c7d69-72e3-411d-b873-680ebf48064c
+Evangelos Pittas,iOS,Sportsbook,iOS Engineer,Middle,Mark Spiteri,evangelos.pittas@betssongroup.com,712020:49606f27-8067-4d17-a8b6-098169bbbbe1
+Guilherme de Assis dos Santos,iOS,Sportsbook,iOS Engineer,Middle,Hakan Kanmaz,guilherme.deassisdossantos@betssongroup.com,712020:b4204745-2f3e-464e-a72f-a1eca5f2357f
+Hugo Oliveira,iOS,Sportsbook,iOS Engineer,Senior,Mark Spiteri,hugo.oliveiracoutinho@betssongroup.com,712020:3a72e5e6-1071-4ec4-8908-3a065dc945c8
+Jakub Gawecki,iOS,PAM,iOS Engineer,Senior,Mark Spiteri,jakub.gawecki@betssongroup.com,712020:032c6071-5824-4139-8607-bc81cb95d2ad
+Jhonattan Solarte Martinez,iOS,Gaming,iOS Engineer,Middle,Mark Spiteri,jhonattan.solartemartinez@betssongroup.com,712020:c2fd36a5-1763-41c0-aab2-b370635cc3b3
+Jose Maria Martinez,iOS,Sportsbook,iOS Engineer,Senior,Hakan Kanmaz,jose.martinez@betssongroup.com,712020:90111bee-c2da-4278-afdb-2edf209cb952
+Julian Arias Maetsch,iOS,PAM,iOS Engineer,Senior,Hakan Kanmaz,julian.ariasmaetschl@betssongroup.com,712020:90d17032-a9c3-404f-afdb-961df6d19e6b
+Kai Busuttil,iOS,Gaming,iOS Engineer,Middle,Hakan Kanmaz,kai.busuttil@betssongroup.com,712020:fb26f47b-47f9-42ef-ab12-5fcbdd714c98
+Kristijan Mileski,iOS,Platform,iOS Engineer,Senior,Conlagh Finnegan,kristijan.mileski@betssongroup.com,712020:8d49009d-f6e0-4f48-a816-3034aaa08f2b
+Maciej Szostak,iOS,PAM,iOS Engineer,Middle,Conlagh Finnegan,maciej.szostak@betssongroup.com,712020:f9cd2fdb-ebc1-4b21-b891-470c0606a47d
+Michael Favre,iOS,ExEn,iOS Engineer,Middle,Mark Spiteri,michael.favre@betssongroup.com,712020:50d011e8-cf13-4d7a-ad6d-3abc521b938e
+Milika Delic,iOS,Sportsbook,iOS Engineer,Senior,Conlagh Finnegan,milika.delic@betssongroup.com,712020:3d987aa4-9928-455d-bd43-ab9e24c2221f
+Oleksandr Kuznietsov,iOS,PAM,iOS Engineer,Senior-,Mark Spiteri,oleksandr.kuznietsov@betssongroup.com,712020:0a21f10e-8656-42fb-a346-7455e813b77e
+Pankaj Pal,iOS,Wrapper,iOS Engineer,Senior,Mark Spiteri,pankaj.pal@betssongroup.com,5c6d0e2477edd55f716a348a
+Rodolfo Roca Neto,iOS,Sportsbook,iOS Engineer,Middle,Conlagh Finnegan,rodolfo.rocaneto@betssongroup.com,712020:f2d5b2e5-1c0f-412b-b545-24ebc6758a73
+Samuel Sierra Contreras,iOS,Sportsbook,iOS Engineer,Senior,Hakan Kanmaz,samuel.sierracontreras@betssongroup.com,712020:7ca3cf4a-a354-4520-b221-dfef45f76e94
+Simon Rebiere,iOS,Sportsbook,iOS Engineer,Middle,Mark Spiteri,simon.rebiere@betssongroup.com,712020:8b97a108-585b-45bc-8557-a2c028d8ab12
+Spyridon Skordos,iOS,Sportsbook,iOS Engineer,Senior,Mark Spiteri,spyridon.skordos@betssongroup.com,712020:6296d169-682b-4c44-9829-1de2304306a3
+Stefan Veljanov,iOS,Sportsbook,iOS Engineer,Senior,Hakan Kanmaz,stefan.veljanov@betssongroup.com,712020:42140d91-216f-4927-b0fd-a4e0e17f96d6
+Steffen Blümm,iOS,ExEn,iOS Engineer,Senior,Conlagh Finnegan,steffen.bluemm@betssongroup.com,712020:bbdb5b8e-e7ac-4504-86d9-8137bd322113
+Tigran Gishyan,iOS,Sportsbook,Tech Lead,Lead,Luca Di Michele,tigran.gishyan@betssongroup.com,712020:42d3703b-9adf-4bf5-810a-e922c0a6203d
+Uttam Pandey,iOS,Gaming,iOS Engineer,Middle,Hakan Kanmaz,uttam.pandey@betssongroup.com,712020:8f72f182-59fc-482a-b7ba-74b4ef7d07e4
+Viktor Richard Ban,iOS,PAM,Tech Lead,Lead,Luca Di Michele,viktor.ban@betssongroup.com,712020:3ecc9398-bda4-4e41-a60f-100d6288605c
